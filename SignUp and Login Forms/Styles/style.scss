@@ -1,0 +1,47 @@
+@import "//node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(44, 119, 94);
+    overflow: hidden;
+    // header{
+    //     nav.navbar{
+    //         background-color: $primaryColor !important;
+    //     }
+    // }
+    main{
+        flex: 1 0 auto;
+        .card{
+            background-color: rgb(255, 255, 255);
+            width: 40%;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        form{
+            button{
+                width: 40% !important;
+                border: none;
+    
+            }
+            #check{
+                text-align: left;
+            }
+            // button:focus{
+            //     outline: none !important;
+            //     box-shadow: none !important;
+            // }
+            // #addTaskButton{
+            //     display: block;
+            // }
+            // #updateTaskButton{
+            //     display: none;
+            // }
+        }
+    }
+    // footer{
+    //     background-color: $primaryColor;
+    // }
+}   

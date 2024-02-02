@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Custom Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./Styles/style.css">
+
+  <title>JavaScript-No-3 Zeeshan Elahi</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="javacsript:void(0)">Assignments</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Chapters 15 - 20</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <div class="py-5">
+      <div class="container">
+        <div class="row ">
+          <div class="col">
+            <h3 class="text-center">Chapter # 15 - 20 | Arrays: It's Methods &amp; for loops</h3>
+            <div class="border-bottom mt-4 border-secondary"></div>
+          </div>
+        </div>
+        <div class="row mt-3 mt-md-5 ">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <h4 class="text-center">Input</h4>
+            <div class="border rounded-3 p-4 d-flex align-items-center" style="height:122px">
+              <div class="input-group" >
+                 <input id="input"  type="text"   class="form-control form-control-lg bg-transparent" 
+                  placeholder="Type Your Text Here"  >
+                 
+                    
+                <button class="btn btn-outline-secondary" id="clear" >Clear</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <h4 class="text-center">Original String</h4>
+            <div class="border rounded-3 p-4 originalStringBox" style="height:122px">
+              <div id="originalTextBox" class="text-center  " >
+                <a  class="text-white text-decoration-none p-2">1)  Faisalabad</a>
+                <a  class="text-white text-decoration-none p-2">2)  Lahore</a>
+                <a  class="text-white text-decoration-none p-2">3)  Multan</a>
+                <a  class="text-white text-decoration-none p-2">4)  Sargodha</a>
+                <a  class="text-white text-decoration-none p-2">5)  Rajanpur</a>
+                <a  class="text-white text-decoration-none p-2">6)  Bhawalpur</a>
+                <a  class="text-white text-decoration-none p-2">7)  Sheikhupura</a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 mt-md-5">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
+            <h4 class="text-center">Buttons</h4>
+            <div class="border rounded-3 p-4 text-center buttons">
+              <button class="btn btn-danger" id="alert">Simple Alert</button>
+              <button class="btn btn-danger" id="name">Print My Name</button>
+              <button class="btn btn-danger" id="cities">Print All Cities</button>
+              <button class="btn btn-danger" id="addCity">Add Your City In List</button>
+              <button class="btn btn-danger" id="table" >Generate Table</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 ">
+            <h4 class="text-center">Output / Result</h4>
+            <div class="border rounded-3 p-4 text-center" style="min-height: 180px;">
+              <div id="output"></div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-outline-dark mt-4" id="clearOutputButton" >Clear Output</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="text-center text-white mb-0">&copy;<span id="year"></span>.All Rights Reserved <a href="#"
+              target="_blank" rel="noopener noreferrer"
+              class="text-white fw-bold text-decoration-none">www.zeeshanelahi.net</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Custom Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <!-- Custom Javascript -->
+  <script src="./JS/script.js"></script>
+  <script>
+    var now = new Date()
+      var year = now.getFullYear()
+      document.getElementById("year").innerHTML=year
+      
+      console.log(year)
+    
+  </script>
+</body>
+
+</html>
