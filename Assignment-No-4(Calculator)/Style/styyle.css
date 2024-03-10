@@ -1,85 +1,94 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "poppins", sans-serif;
-  }
-  body {
-    height: 100vh;
-    text-align: center; 
-    display: flex;
-    padding: 50px 0;
-    background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
 }
-header{
-    height: 0%;
-    width: 37.5%;
+body {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  padding: 50px 0;
+  background-color: black;
 }
-footer{
-    height: 0%;
-    width: 37.5%;
+header {
+  height: 0%;
+  width: 37.5%;
 }
-main{
-    height: 100%;
-    width: 25%;
-    box-shadow: 5px 10px 50px gray;
-    border: 30px solid rgb(47, 47, 47);
-    border-radius: 20px;
+footer {
+  height: 0%;
+  width: 37.5%;
 }
-main input{
-    width: 100%;
-    min-height: 20%;
-    text-align: right;
+main {
+  height: 100%;
+  width: 30%;
+  box-shadow: 5px 10px 50px gray;
+  border: 30px solid rgb(47, 47, 47);
+  border-radius: 20px;
+}
+main input {
+  width: 100%;
+  min-height: 20%;
+  text-align: right;
 }
 main input:focus {
   outline: none;
 }
-.calculator{
-    display: flex;
-    width: 100%;
-    height: 80%;
+.calculator {
+  display: flex;
+  width: 100%;
+  height: 80%;
 }
 
-.calculator .left-two-lines{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+.calculator .left-two-lines {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.left-dives{
+.left-dives {
   display: flex;
   height: 20%;
 }
-.left-dives .left-dives-button{
+.left-dives .left-dives-button {
   width: 50%;
 }
-.calculator .third-line{
-    width: 25%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+.calculator .third-line {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.third-line button{
+.third-line button {
   width: 100%;
   height: 20%;
 }
 
-.calculator .fourth-line{
-    width: 25%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+.calculator .fourth-line {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.fourth-line button{
+.fourth-line button {
   width: 100%;
   height: 25%;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
-button:focus{
+button:focus {
   border: none !important;
   outline: none !important;
   box-shadow: none !important;
+}
+@media screen and (max-width: 1100px) {
+  main {
+    width: 40%; /* Change width to 80% for screens smaller than 600px */
+  }
+}
+@media screen and (max-width: 700px) {
+  main {
+    width: 80%; /* Change width to 80% for screens smaller than 600px */
+  }
 }
