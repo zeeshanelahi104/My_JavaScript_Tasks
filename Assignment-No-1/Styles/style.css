@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f1faee;
+}
+body header nav.navbar {
+  background-color: #1d3557 !important;
+}
+body main {
+  flex: 1 0 auto;
+}
+body footer {
+  background-color: #1d3557;
+}/*# sourceMappingURL=style.css.map */
